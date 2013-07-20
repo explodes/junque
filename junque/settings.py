@@ -279,6 +279,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 # Don't forget to use absolute paths, not relative paths.
 TEMPLATE_DIRS = (
     rel('templates'),
+    rel('home', 'templates'),
 )
 
 
@@ -307,6 +308,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     "mezzanine.accounts",
     #"mezzanine.mobile",
+    "junque.home",
 )
 
 # List of processors used by RequestContext to populate the context.
